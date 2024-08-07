@@ -16,3 +16,5 @@ def new_handler(message):
 @bot.message_handler(commands=["cool"])
 def cool_handler(message):
     bot.send_message(message.chat.id, "[золотое яблоко](https://goldapple.ru)", parse_mode="markdown")
+
+bot.infinity_polling()
